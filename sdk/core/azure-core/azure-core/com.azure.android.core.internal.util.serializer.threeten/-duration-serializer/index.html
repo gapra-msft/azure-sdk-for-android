@@ -1,0 +1,877 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DurationSerializer</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../../scripts/navigationLoader.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/platformContentHandler.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <script>var pathToRoot = "../../../";</script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="logo"></div>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+        <div id="searchBar"></div>
+        <script type="text/javascript" src="../../../scripts/pages.js"></script>
+        <script type="text/javascript" src="../../../scripts/main.js"></script>
+        <div id="content" pageIds="com.azure.android.core.internal.util.serializer.threeten/DurationSerializer///PointingToDeclaration/">
+          <div class="breadcrumbs"><a href="../../index.html">azure-core</a>/<a href="../index.html">com.azure.android.core.internal.util.serializer.threeten</a>/<a href="index.html">DurationSerializer</a></div>
+          <div class="cover ">
+            <h1 class="cover"><a data-name="durationserializer"></a><span>DurationSerializer</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><p class="paragraph">Serializer for ThreeTen temporal <span data-unresolved-link="org.threeten.bp/Duration///PointingToDeclaration/">Duration</span> s. p&gt; NOTE: since 2.10, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializationFeature/WRITE_DURATIONS_AS_TIMESTAMPS/#/PointingToDeclaration/">WRITE_DURATIONS_AS_TIMESTAMPS</span> determines global default used for determining if serialization should use numeric (timestamps) or textual representation. Before this, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializationFeature/WRITE_DATES_AS_TIMESTAMPS/#/PointingToDeclaration/">WRITE_DATES_AS_TIMESTAMPS</span> was used.</p><h4 class=""><a data-name="author"></a>Author</h4><p class="paragraph">Nick Williams</p><div class="symbol monospace">class <a href="index.html">DurationSerializer</a> extends <a href="../-three-ten-formatted-serializer-base/index.html">ThreeTenFormattedSerializerBase</a>&lt;<span data-unresolved-link="org.threeten.bp/Duration///PointingToDeclaration/">Duration</span>&gt;<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class=""><a data-name="functions"></a>Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/">_neitherNull</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">final static boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/">_neitherNull</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/">a</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_neitherNull/#java.lang.Object#java.lang.Object/PointingToDeclaration/">b</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/_nonEmpty/#java.util.Collection&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_nonEmpty/#java.util.Collection&lt;?&gt;/PointingToDeclaration/">_nonEmpty</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/_nonEmpty/#java.util.Collection&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">final static boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_nonEmpty/#java.util.Collection&lt;?&gt;/PointingToDeclaration/">_nonEmpty</a>(<a href="https://developer.android.com/reference/kotlin/java/util/Collection.html">Collection</a>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/_nonEmpty/#java.util.Collection&lt;?&gt;/PointingToDeclaration/">c</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/acceptJsonFormatVisitor/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/accept-json-format-visitor.html">acceptJsonFormatVisitor</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/acceptJsonFormatVisitor/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/accept-json-format-visitor.html">acceptJsonFormatVisitor</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/accept-json-format-visitor.html">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/accept-json-format-visitor.html">typeHint</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/acceptJsonFormatVisitor/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">acceptJsonFormatVisitor</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/acceptJsonFormatVisitor/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/acceptJsonFormatVisitor/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">typeHint</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/createContextual/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/create-contextual.html">createContextual</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/createContextual/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/create-contextual.html">createContextual</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/create-contextual.html">prov</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/create-contextual.html">property</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace block">abstract <span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser/ContextualSerializer/createContextual/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">createContextual</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser/ContextualSerializer/createContextual/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">p</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser/ContextualSerializer/createContextual/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">p1</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/createSchemaNode/#java.lang.String/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/createSchemaNode/#java.lang.String/PointingToDeclaration/">createSchemaNode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/createSchemaNode/#java.lang.String/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind.node/ObjectNode///PointingToDeclaration/">ObjectNode</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/createSchemaNode/#java.lang.String/PointingToDeclaration/">createSchemaNode</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/createSchemaNode/#java.lang.String/PointingToDeclaration/">type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">findAnnotatedContentSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">findAnnotatedContentSerializer</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">serializers</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findAnnotatedContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty/PointingToDeclaration/">property</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">findContextualConvertingSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">findContextualConvertingSerializer</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">property</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findContextualConvertingSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">existingSerializer</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">findConvertingContentSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">findConvertingContentSerializer</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">prop</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findConvertingContentSerializer/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">existingSerializer</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">findFormatFeature</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">findFormatFeature</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">prop</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">typeForDefaults</a>, <span data-unresolved-link="com.fasterxml.jackson.annotation/JsonFormat.Feature///PointingToDeclaration/">JsonFormat.Feature</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatFeature/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;#com.fasterxml.jackson.annotation.JsonFormat.Feature/PointingToDeclaration/">feat</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">findFormatOverrides</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.annotation/JsonFormat.Value///PointingToDeclaration/">JsonFormat.Value</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">findFormatOverrides</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">prop</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findFormatOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">typeForDefaults</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">findIncludeOverrides</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.annotation/JsonInclude.Value///PointingToDeclaration/">JsonInclude.Value</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">findIncludeOverrides</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/BeanProperty///PointingToDeclaration/">BeanProperty</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">prop</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findIncludeOverrides/#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.BeanProperty#java.lang.Class&lt;?&gt;/PointingToDeclaration/">typeForDefaults</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/">findPropertyFilter</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind.ser/PropertyFilter///PointingToDeclaration/">PropertyFilter</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/">findPropertyFilter</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/">provider</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/">filterId</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/findPropertyFilter/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Object#java.lang.Object/PointingToDeclaration/">valueToFilter</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/getDelegatee/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/getDelegatee/#/PointingToDeclaration/">getDelegatee</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/getDelegatee/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/getDelegatee/#/PointingToDeclaration/">getDelegatee</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/getSchema/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.reflect.Type/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/get-schema.html">getSchema</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/ThreeTenFormattedSerializerBase/getSchema/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.reflect.Type/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonNode///PointingToDeclaration/">JsonNode</span> <a href="../-three-ten-formatted-serializer-base/get-schema.html">getSchema</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/get-schema.html">provider</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html">Type</a> <a href="../-three-ten-formatted-serializer-base/get-schema.html">typeHint</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonNode///PointingToDeclaration/">JsonNode</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/getSchema/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.reflect.Type/PointingToDeclaration/">getSchema</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/getSchema/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.reflect.Type/PointingToDeclaration/">provider</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html">Type</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/getSchema/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.reflect.Type/PointingToDeclaration/">typeHint</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/handledType/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/handledType/#/PointingToDeclaration/">handledType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/handledType/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/handledType/#/PointingToDeclaration/">handledType</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/isDefaultSerializer/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/isDefaultSerializer/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">isDefaultSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/isDefaultSerializer/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/isDefaultSerializer/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">isDefaultSerializer</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/isDefaultSerializer/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">serializer</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/isEmpty/#T/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/isEmpty/#T/PointingToDeclaration/">isEmpty</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/isEmpty/#T/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/isEmpty/#T/PointingToDeclaration/">isEmpty</a>(<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/isEmpty/#T/PointingToDeclaration/">value</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/isUnwrappingSerializer/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/isUnwrappingSerializer/#/PointingToDeclaration/">isUnwrappingSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/isUnwrappingSerializer/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/isUnwrappingSerializer/#/PointingToDeclaration/">isUnwrappingSerializer</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/properties/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/properties/#/PointingToDeclaration/">properties</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/properties/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><a href="https://developer.android.com/reference/kotlin/java/util/Iterator.html">Iterator</a>&lt;<span data-unresolved-link="com.fasterxml.jackson.databind.ser/PropertyWriter///PointingToDeclaration/">PropertyWriter</span>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/properties/#/PointingToDeclaration/">properties</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/replaceDelegatee/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/replaceDelegatee/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">replaceDelegatee</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/replaceDelegatee/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/replaceDelegatee/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">replaceDelegatee</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/replaceDelegatee/#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;/PointingToDeclaration/">delegatee</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/serialize/#org.threeten.bp.Duration#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="serialize.html">serialize</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/serialize/#org.threeten.bp.Duration#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="serialize.html">serialize</a>(<span data-unresolved-link="org.threeten.bp/Duration///PointingToDeclaration/">Duration</span> <a href="serialize.html">duration</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonGenerator///PointingToDeclaration/">JsonGenerator</span> <a href="serialize.html">generator</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="serialize.html">provider</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace block">abstract void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/serialize/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/">serialize</a>(<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/serialize/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/">p</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonGenerator///PointingToDeclaration/">JsonGenerator</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/serialize/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/">p1</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/serialize/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider/PointingToDeclaration/">p2</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.azure.android.core.internal.util.serializer.threeten/ThreeTenSerializerBase/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-serializer-base/serialize-with-type.html">serializeWithType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/ThreeTenSerializerBase/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-serializer-base/serialize-with-type.html">serializeWithType</a>(<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a> <a href="../-three-ten-serializer-base/serialize-with-type.html">value</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonGenerator///PointingToDeclaration/">JsonGenerator</span> <a href="../-three-ten-serializer-base/serialize-with-type.html">g</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-serializer-base/serialize-with-type.html">provider</a>, <span data-unresolved-link="com.fasterxml.jackson.databind.jsontype/TypeSerializer///PointingToDeclaration/">TypeSerializer</span> <a href="../-three-ten-serializer-base/serialize-with-type.html">typeSer</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/">serializeWithType</a>(<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/">value</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonGenerator///PointingToDeclaration/">JsonGenerator</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/">gen</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/">serializers</a>, <span data-unresolved-link="com.fasterxml.jackson.databind.jsontype/TypeSerializer///PointingToDeclaration/">TypeSerializer</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/serializeWithType/#T#com.fasterxml.jackson.core.JsonGenerator#com.fasterxml.jackson.databind.SerializerProvider#com.fasterxml.jackson.databind.jsontype.TypeSerializer/PointingToDeclaration/">typeSer</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/unwrappingSerializer/#com.fasterxml.jackson.databind.util.NameTransformer/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/unwrappingSerializer/#com.fasterxml.jackson.databind.util.NameTransformer/PointingToDeclaration/">unwrappingSerializer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/unwrappingSerializer/#com.fasterxml.jackson.databind.util.NameTransformer/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">T</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/unwrappingSerializer/#com.fasterxml.jackson.databind.util.NameTransformer/PointingToDeclaration/">unwrappingSerializer</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.util/NameTransformer///PointingToDeclaration/">NameTransformer</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/unwrappingSerializer/#com.fasterxml.jackson.databind.util.NameTransformer/PointingToDeclaration/">unwrapper</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/usesObjectId/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/usesObjectId/#/PointingToDeclaration/">usesObjectId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/usesObjectId/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">boolean <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/usesObjectId/#/PointingToDeclaration/">usesObjectId</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitArrayFormat</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitArrayFormat</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">typeHint</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">itemSerializer</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitArrayFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.databind.JsonSerializer&lt;?&gt;#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">itemType</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitFloatFormat</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitFloatFormat</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">typeHint</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonParser.NumberType///PointingToDeclaration/">JsonParser.NumberType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitFloatFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">numberType</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitIntFormat</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitIntFormat</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">typeHint</a>, <span data-unresolved-link="com.fasterxml.jackson.core/JsonParser.NumberType///PointingToDeclaration/">JsonParser.NumberType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitIntFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType#com.fasterxml.jackson.core.JsonParser.NumberType/PointingToDeclaration/">numberType</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitStringFormat</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitStringFormat</a>(<span data-unresolved-link="com.fasterxml.jackson.databind.jsonFormatVisitors/JsonFormatVisitorWrapper///PointingToDeclaration/">JsonFormatVisitorWrapper</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">visitor</a>, <span data-unresolved-link="com.fasterxml.jackson.databind/JavaType///PointingToDeclaration/">JavaType</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/visitStringFormat/#com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper#com.fasterxml.jackson.databind.JavaType/PointingToDeclaration/">typeHint</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind/JsonSerializer/withFilterId/#java.lang.Object/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/withFilterId/#java.lang.Object/PointingToDeclaration/">withFilterId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind/JsonSerializer/withFilterId/#java.lang.Object/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><span data-unresolved-link="com.fasterxml.jackson.databind/JsonSerializer///PointingToDeclaration/">JsonSerializer</span>&lt;? extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt; <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/withFilterId/#java.lang.Object/PointingToDeclaration/">withFilterId</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind/JsonSerializer/withFilterId/#java.lang.Object/PointingToDeclaration/">filterId</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+<a data-name="com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">wrapAndThrow</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="brief-with-platform-tags"><div class="inner-brief-with-platform-tags"></div>
+<span class="pull-right"></span></div>
+
+  <div class="main-subrow">
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">wrapAndThrow</a>(<span data-unresolved-link="com.fasterxml.jackson.databind/SerializerProvider///PointingToDeclaration/">SerializerProvider</span> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">provider</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Throwable.html">Throwable</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">t</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">bean</a>, <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="../-three-ten-formatted-serializer-base/index.html#com.fasterxml.jackson.databind.ser.std/StdSerializer/wrapAndThrow/#com.fasterxml.jackson.databind.SerializerProvider#java.lang.Throwable#java.lang.Object#java.lang.String/PointingToDeclaration/">fieldName</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                  </div>
+                </div>
+              </div>
+              <h2 class=""><a data-name="properties"></a>Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/INSTANCE/#/PointingToDeclaration/"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow "><span><a href="index.html#com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/INSTANCE/#/PointingToDeclaration/">INSTANCE</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/INSTANCE/#/PointingToDeclaration/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                        <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="platform-dependent-row keyValue">
+                    <div></div>
+                    <div class="title">
+                      <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">public final static <a href="index.html">DurationSerializer</a> <a href="index.html#com.azure.android.core.internal.util.serializer.threeten/DurationSerializer/INSTANCE/#/PointingToDeclaration/">INSTANCE</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#container"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 9.66683H0.666992L6.00033 3.66683L11.3337 9.66683Z" fill="black"/>
+    <path d="M0.666992 0.333496H11.3337V1.66683H0.666992V0.333496Z" fill="black"/>
+</svg></a></span><span>© 2020 Copyright</span><span class="pull-right"><span>Sponsored and developed by dokka</span><a href="https://github.com/Kotlin/dokka"><span class="padded-icon"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 0H2.3949L4.84076 2.44586L0 7.28662L0.713376 8L5.55414 3.15924L8 5.6051V0Z" fill="black"/>
+</svg></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
